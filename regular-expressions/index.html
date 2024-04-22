@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link href="../tailwind-components/style/output.css" rel="stylesheet">
+  <style>
+    /* Input fields */
+    .input-field {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    /* Error messages */
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+    <h2 class="text-lg font-semibold mb-4">Form Validasi</h2>
+    <form id="emailForm">
+      <div class="mb-4">
+        <label for="nama" class="block text-sm font-medium text-gray-700">Nama</label>
+        <input type="text" id="nama" name="nama" class="input-field mt-1">
+        <span id="inputNamaError" class="error"></span>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" class="input-field mt-1">
+        <span id="inputEmailError" class="error"></span>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" name="password" class="input-field mt-1">
+        <span id="inputPasswordError" class="error"></span>
+      </div>
+      <div class="mb-4">
+        <label for="phone" class="block text-sm font-medium text-gray-700">No Handphone</label>
+        <input type="text" id="noTelp" name="noTelp" class="input-field mt-1">
+        <span id="inputNoTelpError" class="error"></span>
+      </div>
+      <div class="mb-4">
+        <label for="url" class="block text-sm font-medium text-gray-700">URL</label>
+        <input type="text" id="url" name="url" class="input-field mt-1">
+        <span id="inputURLError" class="error"></span>
+      </div>
+      <button type="submit" class="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Submit</button>
+    </form>
+  </div>
+  <script src="regex.js"></script>
+</body>
+</html>
